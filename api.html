@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Manar Traduction – API</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="logo">🌐 Manar Traduction</div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="traducteurs.html">Traducteurs</a>
+    <a href="api.html">API</a>
+  </nav>
+</header>
+<main>
+  <section class="hero"><h1>Démo de l’API</h1><p>Testez la traduction directement ici :</p></section>
+  <section class="api-doc">
+    <textarea id="inputText" rows="4" placeholder="Texte à traduire…"></textarea>
+    <select id="source">
+      <option value="fr">Français</option>
+      <option value="ar">Arabe</option>
+      <option value="en">Anglais</option>
+    </select>
+    → 
+    <select id="target">
+      <option value="en">Anglais</option>
+      <option value="fr">Français</option>
+      <option value="ar">Arabe</option>
+    </select><br />
+    <button id="translateBtn">Traduire</button>
+    <pre id="result"></pre>
+  </section>
+</main>
+<footer>
+  <p>Besoin d’aide ? Contact : manarsbr9@gmail.com</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
