@@ -1,32 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plateforme de Traduction Algérienne</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manar Traduction – Accueil</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Traduction Pro Algérie</h1>
-        <p>Réservez une séance de traduction instantanée avec des experts algériens</p>
-    </header>
-    <main>
-        <section class="reservation">
-            <h2>Réserver une séance</h2>
-            <form id="bookingForm">
-                <input type="text" name="name" placeholder="Votre nom" required>
-                <input type="email" name="email" placeholder="Votre email" required>
-                <select name="speciality" required>
-                    <option value="">Spécialité</option>
-                    <option value="juridique">Juridique</option>
-                    <option value="médical">Médical</option>
-                    <option value="technique">Technique</option>
-                </select>
-                <input type="datetime-local" name="datetime" required>
-                <button type="submit">Réserver</button>
-            </form>
-            <p id="confirmation"></p>
-        </section>
-    </main>
-    <a href="reservation.html" class="btn-reserver">Réserver Maintenant</a>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo"><strong>Manar Traduction</strong></div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="traducteurs.html">Traducteurs</a>
+      <a href="contact.html">Contact</a>
+      <a href="reservation.html" class="btn-primary">Connexion</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="container">
+      <h1>Traduction Professionnelle <span>en Temps Réel</span></h1>
+      <p>Connectez-vous instantanément avec des traducteurs algériens qualifiés.<br>
+      Services spécialisés en médical, juridique, business et plus encore.</p>
+      <div class="buttons">
+        <a href="reservation.html" class="btn-primary">Réserver Maintenant</a>
+        <a href="demo.html" class="btn-secondary">Voir la Démo</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- STATS -->
+  <section class="stats container">
+    <div class="stat">
+      <h2>150+</h2>
+      <p>Traducteurs Certifiés</p>
+    </div>
+    <div class="stat">
+      <h2>24/7</h2>
+      <p>Disponibilité</p>
+    </div>
+    <div class="stat">
+      <h2>15+</h2>
+      <p>Langues Supportées</p>
+    </div>
+    <div class="stat">
+      <h2>98%</h2>
+      <p>Satisfaction Client</p>
+    </div>
+  </section>
+
+  <!-- SPÉCIALITÉS -->
+  <section class="specialites">
+    <h2>Nos Spécialités</h2>
+    <p style="text-align: center;">Des experts dans chaque domaine</p>
+    <div class="cards container">
+      <div class="card">
+        <h3>Traduction Médicale</h3>
+        <p>Dossiers médicaux, consultations, rapports spécialisés avec une précision technique absolue.</p>
+      </div>
+      <div class="card">
+        <h3>Traduction Juridique</h3>
+        <p>Contrats, procédures légales, documents officiels avec expertise juridique certifiée.</p>
+      </div>
+      <div class="card">
+        <h3>Business & Commerce</h3>
+        <p>Négociations, présentations, réunions d'affaires avec expertise commerciale internationale.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Manar Traduction. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
