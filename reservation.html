@@ -2,25 +2,89 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Réservation – R-WORD-MANAR</title>
+  <title>Réservation – Manar Traduction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
 </head>
 <body>
+
   <h1>Formulaire de Réservation</h1>
-  <form action="envoyer_reservation.php" method="post">
-    <label for="name">Nom complet :</label>
-    <input type="text" id="name" name="name" required>
+
+  <form action="envoyer_reservation.php" method="POST">
+    <label for="nom">Nom complet :</label>
+    <input type="text" id="nom" name="nom" required>
 
     <label for="email">Adresse email :</label>
     <input type="email" id="email" name="email" required>
 
-    <label for="date">Date de réservation :</label>
+    <label for="type">Type de traduction :</label>
+    <select id="type" name="type" required>
+      <option value="">-- Sélectionnez --</option>
+      <option value="médicale">Traduction Médicale</option>
+      <option value="juridique">Traduction Juridique</option>
+      <option value="business">Business & Commerce</option>
+    </select>
+
+    <label for="langue">Langue souhaitée :</label>
+    <input type="text" id="langue" name="langue" placeholder="Ex: Français vers Arabe" required>
+
+    <label for="date">Date de rendez-vous :</label>
     <input type="date" id="date" name="date" required>
 
-    <label for="message">Détails :</label>
+    <label for="heure">Heure :</label>
+    <input type="time" id="heure" name="heure" required>
+
+    <label for="message">Détails supplémentaires :</label>
     <textarea id="message" name="message" rows="4" required></textarea>
 
-    <button type="submit">Envoyer la réservation</button>
+    <button type="submit">Envoyer la Réservation</button>
   </form>
+
 </body>
 </html>
