@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Réserver un traducteur</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🌐 Manar Traduction</div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="traducteurs.html">Traducteurs</a>
+      <a href="api.html">API</a>
+      <a href="reservation.html" class="btn-connect">Réservation</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Réservation</h1>
+    <p>Choisissez votre traducteur et fixez un rendez-vous.</p>
+  </section>
+
+  <section class="form-reservation">
+    <form id="reservationForm">
+      <label>Nom complet :</label>
+      <input type="text" name="name" required />
+
+      <label>Email :</label>
+      <input type="email" name="email" required />
+
+      <label>Choisir un traducteur :</label>
+      <select name="translator" required>
+        <option value="">-- Sélectionner --</option>
+        <option>Yasmine B. – Juridique</option>
+        <option>Omar K. – Médical</option>
+        <option>Lina M. – Business</option>
+      </select>
+
+      <label>Date :</label>
+      <input type="date" name="date" required />
+
+      <label>Heure :</label>
+      <input type="time" name="time" required />
+
+      <label>Message :</label>
+      <textarea name="message" rows="4"></textarea>
+
+      <button type="submit" class="btn-primary">Envoyer la demande</button>
+    </form>
+
+    <div id="confirmation" style="display:none; text-align:center; padding:20px;">
+      ✅ Votre demande a bien été envoyée !
+    </div>
+  </section>
+
+  <footer>
+    <p>📧 manarsbr9@gmail.com | 📱 +213 675 35 76 80</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
