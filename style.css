@@ -19,3 +19,17 @@ nav a { margin-left:20px; text-decoration:none; color:#333; }
 .api-doc textarea, .api-doc select, .api-doc button { display:block; width:80%; max-width:500px; margin:10px auto; padding:10px; font-size:1em; }
 .api-doc pre { white-space:pre-wrap; word-wrap:break-word; background:#f4f4f4; padding:15px; border-radius:6px; }
 footer { text-align:center; padding:20px; background:#e8f6f3; margin-top:40px; }
+.reservation-box {
+  border: 2px solid #007BFF;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.reservation-box:hover {
+  background-color: #e0f0ff;
+  transform: scale(1.02);
+}
