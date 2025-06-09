@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Manar Traduction – Accueil</title>
-<link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme de Traduction Algérienne</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <div class="logo">🌐 <strong>Manar Traduction</strong></div>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="traducteurs.html">Traducteurs</a>
-    <a href="api.html">API</a>
-    <a href="mailto:manarsbr9@gmail.com" class="btn-connect">Contact</a>
-  </nav>
-</header>
-<main>
-  <section class="hero">
-    <h1>Traduction Professionnelle<br /><span>en Temps Réel</span></h1>
-    <p>Accédez à des traducteurs algériens qualifiés, disponibles à toute heure.</p>
-    <div class="buttons">
-      <a href="traducteurs.html" class="btn-primary">Voir les traducteurs</a>
-      <a href="api.html" class="btn-secondary">Tester l’API</a>
-    </div>
-  </section>
-  <section class="stats">
-    <div><span>150+</span><br />Traducteurs</div>
-    <div><span>24/7</span><br />Disponibilité</div>
-    <div><span>15+</span><br />Langues</div>
-    <div><span>98%</span><br />Satisfaction</div>
-  </section>
-</main>
-<footer>
-  <p>📧 manarsbr9@gmail.com | 📱 +213 675 35 76 80</p>
-  <p>© 2025 Manar Traduction</p>
-</footer>
+    <header>
+        <h1>Traduction Pro Algérie</h1>
+        <p>Réservez une séance de traduction instantanée avec des experts algériens</p>
+    </header>
+    <main>
+        <section class="reservation">
+            <h2>Réserver une séance</h2>
+            <form id="bookingForm">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <select name="speciality" required>
+                    <option value="">Spécialité</option>
+                    <option value="juridique">Juridique</option>
+                    <option value="médical">Médical</option>
+                    <option value="technique">Technique</option>
+                </select>
+                <input type="datetime-local" name="datetime" required>
+                <button type="submit">Réserver</button>
+            </form>
+            <p id="confirmation"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Traduction Pro Algérie. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
