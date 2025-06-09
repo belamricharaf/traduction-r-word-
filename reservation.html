@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Réservation – Manar Traduction</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Réserver un Traducteur – Manar Traduction</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      padding: 40px;
-    }
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-    }
-    form {
-      max-width: 600px;
-      margin: 0 auto;
+    .reservation-section {
+      max-width: 700px;
+      margin: 60px auto;
       background: #ffffff;
-      padding: 30px;
+      padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
-    label {
+
+    .reservation-section h1 {
+      text-align: center;
+      color: #1d1d1d;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
       display: block;
-      margin-top: 15px;
-      font-weight: bold;
+      font-weight: 600;
+      margin-bottom: 8px;
     }
-    input, select, textarea {
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
       width: 100%;
       padding: 12px;
-      margin-top: 6px;
       border: 1px solid #ccc;
       border-radius: 8px;
-      box-sizing: border-box;
+      font-size: 16px;
     }
+
     button {
+      width: 100%;
       background-color: #28a745;
       color: white;
-      padding: 12px 20px;
+      padding: 14px;
+      font-size: 18px;
       border: none;
       border-radius: 8px;
-      margin-top: 20px;
-      width: 100%;
-      font-size: 16px;
       cursor: pointer;
+      font-weight: 600;
     }
+
     button:hover {
       background-color: #218838;
     }
@@ -54,37 +60,48 @@
 </head>
 <body>
 
-  <h1>Formulaire de Réservation</h1>
+  <!-- FORMULAIRE DE RÉSERVATION -->
+  <section class="reservation-section">
+    <h1>Réserver un Traducteur</h1>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="nom">Nom complet :</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
 
-  <form action="envoyer_reservation.php" method="POST">
-    <label for="nom">Nom complet :</label>
-    <input type="text" id="nom" name="nom" required>
+      <div class="form-group">
+        <label for="email">Adresse email :</label>
+        <input type="email" id="email" name="email" required>
+      </div>
 
-    <label for="email">Adresse email :</label>
-    <input type="email" id="email" name="email" required>
+      <div class="form-group">
+        <label for="type">Type de traduction :</label>
+        <select id="type" name="type" required>
+          <option value="">-- Sélectionnez --</option>
+          <option value="medicale">Traduction Médicale</option>
+          <option value="juridique">Traduction Juridique</option>
+          <option value="business">Business & Commerce</option>
+        </select>
+      </div>
 
-    <label for="type">Type de traduction :</label>
-    <select id="type" name="type" required>
-      <option value="">-- Sélectionnez --</option>
-      <option value="médicale">Traduction Médicale</option>
-      <option value="juridique">Traduction Juridique</option>
-      <option value="business">Business & Commerce</option>
-    </select>
+      <div class="form-group">
+        <label for="date">Date de réservation :</label>
+        <input type="date" id="date" name="date" required>
+      </div>
 
-    <label for="langue">Langue souhaitée :</label>
-    <input type="text" id="langue" name="langue" placeholder="Ex: Français vers Arabe" required>
+      <div class="form-group">
+        <label for="heure">Heure :</label>
+        <input type="time" id="heure" name="heure" required>
+      </div>
 
-    <label for="date">Date de rendez-vous :</label>
-    <input type="date" id="date" name="date" required>
+      <div class="form-group">
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" placeholder="Détails supplémentaires..." required></textarea>
+      </div>
 
-    <label for="heure">Heure :</label>
-    <input type="time" id="heure" name="heure" required>
-
-    <label for="message">Détails supplémentaires :</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
-
-    <button type="submit">Envoyer la Réservation</button>
-  </form>
+      <button type="submit">Envoyer la Réservation</button>
+    </form>
+  </section>
 
 </body>
 </html>
