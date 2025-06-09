@@ -1,11 +1,9 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* GLOBAL */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9fdfb;
@@ -18,12 +16,11 @@ a {
   color: inherit;
 }
 
-/* NAVIGATION */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: white;
   padding: 20px 5%;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04);
 }
@@ -50,14 +47,12 @@ a {
   color: white !important;
   padding: 10px 20px;
   border-radius: 8px;
-  transition: background-color 0.3s;
 }
 
 .btn-connexion:hover {
   background-color: #1e7e34;
 }
 
-/* HERO SECTION */
 .hero {
   text-align: center;
   padding: 100px 20px 60px;
@@ -67,7 +62,6 @@ a {
 .hero h1 {
   font-size: 38px;
   font-weight: bold;
-  color: #1d1d1d;
   margin-bottom: 15px;
 }
 
@@ -91,9 +85,9 @@ a {
 .btn-primary {
   background-color: #28a745;
   color: white;
-  font-weight: 600;
   padding: 12px 26px;
   border-radius: 8px;
+  font-weight: 600;
 }
 
 .btn-primary:hover {
@@ -113,7 +107,6 @@ a {
   background-color: #ebfbee;
 }
 
-/* STATS SECTION */
 .stats {
   display: flex;
   justify-content: space-around;
@@ -135,7 +128,6 @@ a {
   color: #555;
 }
 
-/* SPÉCIALITÉS */
 .specialites {
   background-color: #f9fdfb;
   padding: 60px 5%;
@@ -145,7 +137,6 @@ a {
 .specialites h2 {
   font-size: 30px;
   margin-bottom: 10px;
-  color: #1d1d1d;
 }
 
 .specialites p {
@@ -161,7 +152,7 @@ a {
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   padding: 25px;
@@ -178,7 +169,6 @@ a {
 .card h3 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #1d1d1d;
 }
 
 .card p {
@@ -186,7 +176,6 @@ a {
   color: #555;
 }
 
-/* FOOTER */
 .footer {
   background-color: #f2f2f2;
   text-align: center;
